@@ -38,8 +38,6 @@ class LibraryView {
     }
     /// If applicable, requests that the LibraryView changes the track color of
     /// the selected track. Does nothing otherwise.
-    virtual void assignPreviousTrackColor() {
-    }
-    virtual void assignNextTrackColor() {
+    virtual void selectTrackColor(int steps) {
     }
 };
