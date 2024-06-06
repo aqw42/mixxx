@@ -423,7 +423,6 @@ TrackModel::SortColumnId WTrackTableView::getColumnIdFromCurrentIndex() {
     return trackModel->sortColumnIdFromColumnIndex(currentIndex().column());
 }
 
-
 void WTrackTableView::selectTrackColor(int steps) {
     const QModelIndexList indices = getSelectedRows();
     if (indices.isEmpty()) {
