@@ -1131,12 +1131,12 @@ void LibraryControl::slotTrackColorSelector(int steps) {
         return;
     }
 
-    LibraryView* pActiveView = m_pLibraryWidget->getCurrentTrackTableView();
-    if (!pActiveView) {
+    WTrackTableView* pTrackTableView = m_pLibraryWidget->getCurrentTrackTableView();
+    if (!pTrackTableView) {
         return;
     }
 
     if (steps != 0) {
-        pActiveView->selectTrackColor(steps);
+        pTrackTableView->selectTrackColor(steps);
     }
 }
