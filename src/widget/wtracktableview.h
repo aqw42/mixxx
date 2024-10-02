@@ -39,7 +39,7 @@ class WTrackTableView : public WLibraryTableView {
     void resizeEvent(QResizeEvent* event) override;
     void activateSelectedTrack();
     void loadSelectedTrackToGroup(const QString& group, bool play);
-    void selectTrackColor(int) override;
+    void selectTrackColor(int steps) override;
     TrackModel::SortColumnId getColumnIdFromCurrentIndex() override;
     QList<TrackId> getSelectedTrackIds() const;
     bool isTrackInCurrentView(const TrackId& trackId);

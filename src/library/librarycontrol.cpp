@@ -344,7 +344,7 @@ LibraryControl::LibraryControl(Library* pLibrary)
             this,
             [this](double value) {
                 if (value > 0) {
-                    LibraryControl::slotTrackColorSelector(-1);
+                    slotTrackColorSelector(-1);
                 }
             });
     connect(m_pTrackColorNext.get(),
@@ -1142,7 +1142,5 @@ void LibraryControl::slotTrackColorSelector(int steps) {
         return;
     }
 
-    if (steps != 0) {
-        pTrackTableView->selectTrackColor(steps);
-    }
+    pTrackTableView->selectTrackColor(steps);
 }
